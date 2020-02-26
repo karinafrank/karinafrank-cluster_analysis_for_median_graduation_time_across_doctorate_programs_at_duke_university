@@ -12,7 +12,7 @@ Doctorate programs are typically advertised as requiring 4 years of work, but ac
 
 ## How to Analyze Public Data from Duke University 
 
-Data was collected from the Duke University section of the [Next Generation Life Science Coalition](https://nglscoalition.org/coalition-data/) website. Separate [raw PDFs]() were downloaded with data on each individual life science PhD program offered. The data from PDFs was extracted and transformed into Excel files using [Tabula] (https://tabula.technology/). A new [data analysis Excel document]() was then created to perform cluster analysis using the following steps:
+Data was collected from the Duke University section of the [Next Generation Life Science Coalition](https://nglscoalition.org/coalition-data/) website. Separate [raw PDFs](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/tree/master/Raw%20Data%20Files) were downloaded with data on each individual life science PhD program offered. The data from PDFs was extracted and transformed into [Excel files](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/tree/master/Raw%20Data%20Files) using [Tabula] (https://tabula.technology/). A new [data analysis Excel document]() was then created to perform cluster analysis using the following steps:
 
 
 •	What kind of data was important to use to answer this question, how did you find it, and why did you use this information? Was there some data that you wish you had? If so, how would you change your approach?
