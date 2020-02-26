@@ -1,6 +1,6 @@
 # Cluster Analysis at Duke University for Median Graduation Time Across Doctorate Programs
 
-[!alt image] (https://gradschool.duke.edu/sites/all/themes/grad/logo.png)
+![alt text] (https://gradschool.duke.edu/sites/all/themes/grad/logo.png)
 
 ## Determining Which Doctorate Programs are Conducive to Fast Graduation Times Across Gender
 
