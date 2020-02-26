@@ -12,7 +12,11 @@ Doctorate programs are typically advertised as requiring 4 years of work, but ac
 
 ## How to Analyze Public Data from Duke University 
 
-Data was collected from the Duke University section of the [Next Generation Life Science Coalition](https://nglscoalition.org/coalition-data/) website. Separate [raw PDFs](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/tree/master/Raw%20Data%20Files) were downloaded with data on each individual life science PhD program offered. The data from PDFs was extracted and transformed into [Excel files](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/tree/master/Raw%20Data%20Files) using [Tabula] (https://tabula.technology/). A new [data analysis Excel document]() was then created to perform cluster analysis using the following steps:
+Data was collected from the Duke University section of the [Next Generation Life Science Coalition](https://nglscoalition.org/coalition-data/) website. Separate [raw PDFs](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/tree/master/Raw%20Data%20Files) were downloaded with data on each individual life science PhD program offered. The data from PDFs was extracted and transformed into [Excel files](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/tree/master/Raw%20Data%20Files) using [Tabula] (https://tabula.technology/). A new [data analysis Excel document](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/blob/master/Clustering%20Data%20Analysis.xlsx) was then created to perform cluster analysis using the following steps:
+1. All data regarding median time for degree from separate Excel documents were transfered to one Excel sheet
+2. Some data extraction from Tabula was not perfect, so an additional columnn had to be made for AT 2009-11 for each program, and the data was properly separated from its label using the text-to-columns function
+3. 
+
 
 
 •	What kind of data was important to use to answer this question, how did you find it, and why did you use this information? Was there some data that you wish you had? If so, how would you change your approach?
