@@ -38,7 +38,7 @@ Data was collected from the Duke University section of the [Next Generation Life
 Clusters|	1|	2|	3
 :---:|:---:|:---:|:---:
 ID	|12|	6|	7
-Name|	Immunology	|Computational BME	|Earth and Ociean Sciences
+Name|	Immunology	|Computational BME	|Earth and Ocean Sciences
 Z_men	|1.542203733	|-0.126180305	|-3.266667907
 Z_women|1.004324571|	-0.126983566|	-2.632023013
 
@@ -47,10 +47,12 @@ Z_women|1.004324571|	-0.126983566|	-2.632023013
 ![alt text](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/blob/master/Cluster%20Table.JPG)
 ![alt text](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/blob/master/Cluster%20Graph.JPG)
 
+The data shows that there is a cluster of programs which have substantially larger times to earn a degree, defined by the Immunology program, as the cluster z-score is 1.00 for women and 1.54 for men. The programs in this cluster include: Biochemistry, Biology, Cell Biology, Genetics and Genomics, Immunology, Molecular Genetics and Mircobiology, and Neurobiology. 
+There is another cluster of programs which take around an average amount of time to complete, defined by the Computational Biomedical Engineering Program, with a z-score of -0.13 for men and -0.13 for women. The programs in this cluster include: Biomedical Engineering, Chemistry, Computational BME, Ecology, Environment, Evolutionary Anthropology, Marine Science and Conservation, Molecular Cancer Biology, Pathology, Pharmacology and Cancer Biology, and Psychology and Neuroscience.
+The final cluster of programs takes substantially less time than average to complete their degrees, and is defined by the Earth and Ocean Sciences program with a z-score of -3.27 for men and -2.63 for women. The programs in this cluster include: Earth and Ocean Sciences, Medical Physics, and Nursing.
 
 
 
-•	What kind of data was important to use to answer this question, how did you find it, and why did you use this information? Was there some data that you wish you had? If so, how would you change your approach?
-•	What metrics did you think were important to understanding a quantitative answer to your original question and why? Did you “translate” any of your data into numbers?
-•	Did you base your data analysis on another type of analysis or desired outcome?
-•	Use website links to your data sources, for example, if you used data from Baltimore City Open Data, add a link for the reader to learn more.
+
+
+
