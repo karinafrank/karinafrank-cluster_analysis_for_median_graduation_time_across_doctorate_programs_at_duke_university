@@ -44,7 +44,7 @@ Z_women|1.004324571|	-0.126983566|	-2.632023013
 
 15. The outputs then allowed the data to be organized into their assigned clusters based on their minimum distance to each cluster and their cluster match number. A table was created with cluster data grouped together, and a scatter plot was created to represent the data visually
 
-![alt text]()
+![alt text](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/blob/master/Cluster%20Table.JPG)
 ![alt text](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/blob/master/Cluster%20Graph.JPG)
 
 
