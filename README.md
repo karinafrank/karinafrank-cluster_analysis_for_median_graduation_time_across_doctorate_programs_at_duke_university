@@ -15,7 +15,38 @@ Doctorate programs are typically advertised as requiring 4 years of work, but ac
 Data was collected from the Duke University section of the [Next Generation Life Science Coalition](https://nglscoalition.org/coalition-data/) website. Separate [raw PDFs](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/tree/master/Raw%20Data%20Files) were downloaded with data on each individual life science PhD program offered. The data from PDFs was extracted and transformed into [Excel files](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/tree/master/Raw%20Data%20Files) using [Tabula] (https://tabula.technology/). A new [data analysis Excel document](https://github.com/karinafrank/karinafrank-cluster_analysis_for_median_graduation_time_across_doctorate_programs_at_duke_university/blob/master/Clustering%20Data%20Analysis.xlsx) was then created to perform cluster analysis using the following steps:
 1. All data regarding median time for degree from separate Excel documents were transfered to one Excel sheet
 2. Some data extraction from Tabula was not perfect, so an additional columnn had to be made for AT 2009-11 for each program, and the data was properly separated from its label using the text-to-columns function
-3. 
+3. Since time to graduation data was provided over three cohorts of students, the average and standard deviation of the data was calculated for men and women in each degree program
+4. The overall average and standard deviation of time to graduation was calculated across all degree programs
+5. The z-score for men and women was calculated using the "standardize" function in Excel, which used the overall average of graduation time and program-specific graduation time for men and women. The code used a "locking" feature when referencing the overall average graduation time, as it was unchanging across degree program, and allowed for changes in input data for program-specific time as the code was extended horizontally. An example of the code used is shown below:
+```
+=STANDARDIZE(C$3,$BN$3,$BN$4)
+```
+6. Each degree program was then assigned a number to allow for reference later during the clustering process
+7. 3 sets of random clusters were then assigned to allow for a starting point for the Solver program to later optimize.
+  * The originally chosen clusters were 2 (Biology), 4 (Cell Biology), and 6 (Computational Biomedical Engineering).
+8. The z-score for men and women was computed for these initial clusters, as it would serve as a reference point to check distance against to measure how close other data points were to that cluster.
+9. The sum of squares of differences were then calculated between each program's z-score for men and women and each separate cluster program's z-scores for men and women. This calculates how close each program's data is relative to the cluster data, and provides a measure for optimization. An example of the code used is shown below:
+```
+=SUMXMY2($BQ$4:$BQ$5,B$18:B$19)
+```
+10. To assign each program to which cluster it belongs (the cluster with the smallest sum of difference of squares), the =MIN function was used to return the value of the smallest difference of squares, and therefore the associated cluster
+11. The =MATCH function was then used to return the place value of the previously found minimum difference of squares value. For example, if the fisrt number was found to be the smallest (and associated with the first cluster), then the number 1 was returned. This allows for direct reference to the clusters by number.
+12. The sum of all the minimum distance squared values was calculted across all programs, serving as a measure of the overall success of the current clusterings in minimizing distance for all points from their assigned cluster point. 
+13. The Solver tool was then used to optimize the cluster sets by setting the objecting to minimize the previously calculated sum of minimum distance squared (see step 12). The program was allowed to change the values of the program IDs (which reference the cluster data to the program data, and allow for different data sets to be switched out). As the program IDs went from 1-21, the Solver tool was provided the constraints that any changes to inputs must be integers, and must be greater than or equal to 1, and less than or equal to 21. The solving method was also specified as evolutionary. 
+14. The Solver tool was run, and went through many iterations before timing out and providing its output of the clusters it found to minimize the total difference of squares for all the programs. The final output is shown below.
+
+Clusters|	1|	2|	3
+:---:|:---:|:---:|:---:
+ID	|12|	6|	7
+Name|	Immunology	|Computational BME	|Earth and Ociean Sciences
+Z_men	|1.542203733	|-0.126180305	|-3.266667907
+Z_women|1.004324571|	-0.126983566|	-2.632023013
+
+15. The outputs then allowed the data to be organized into their assigned clusters based on their minimum distance to each cluster and their cluster match number. A table was created with cluster data grouped together, and a scatter plot was created to represent the data visually
+
+![alt text]()
+![alt text]()
+
 
 
 
